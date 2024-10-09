@@ -1,0 +1,284 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="772,3062" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="p:PythonObject" Name="pythonScript" />
+      <Variable x:TypeArguments="p:PythonObject" Name="folderSize" />
+      <Variable x:TypeArguments="x:Object" Name="folderSizeInBytes" />
+      <Variable x:TypeArguments="x:Object" Name="folderPath" />
+      <Variable x:TypeArguments="x:String" Name="newLocation" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="This sequence handles the entire process, including calculating folder size using a Python script, zipping the folder, moving the ZIP file to a new location, and cleaning up the original files." DisplayName="Calculate Folder Size and Handle Data" sap:VirtualizedContainerService.HintSize="536,3039" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <p:PythonScope OperationTimeout="{x:Null}" sap2010:Annotation.AnnotationText="This section runs the Python script to calculate the folder size and returns the result for further processing." DisplayName="Python Scope - Invoke Python Script to Get Folder Size" sap:VirtualizedContainerService.HintSize="502,1666" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Program Files\Python312\python312.dll" Path="C:\Program Files\Python312" TargetPlatform="x64" Version="Python &gt;=3.10" WorkingFolder="C:\GeneratedFiles\Scripts">
+        <p:PythonScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+            </ActivityAction.Argument>
+            <Sequence sap2010:Annotation.AnnotationText="This section loads the Python script, logs the output, and assigns the folder path for further operations. The folder size is calculated using the Python method." DisplayName="Perform Folder Size Calculation" sap:VirtualizedContainerService.HintSize="468,1555" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <p:LoadScript Code="{x:Null}" sap2010:Annotation.AnnotationText="This activity loads the Python script that calculates the size of the folder." DisplayName="Load Folder Size Calculation Script" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[pythonScript]" ScriptFile="C:\GeneratedFiles\Scripts\folder_size.py">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </p:LoadScript>
+              <ui:LogMessage sap2010:Annotation.AnnotationText="Logs that the Python script has been successfully loaded into memory." DisplayName="Log: Python Script Loaded" sap:VirtualizedContainerService.HintSize="434,215" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Python script loaded: &quot; + pythonScript.ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <Assign sap2010:Annotation.AnnotationText="Sets the folder path where the files are located. This is used for size calculations." DisplayName="Assign Folder Path for Size Calculation" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Object">[folderPath]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Object">["C:\GeneratedFiles\Files"]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the folder path that has been set." DisplayName="Log: Folder Path Assigned" sap:VirtualizedContainerService.HintSize="434,204" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Folder Path: &quot; + Convert.ToString(folderPath)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <p:InvokeMethod sap2010:Annotation.AnnotationText="This activity invokes the get_folder_size method from the loaded Python script to retrieve the size of the folder." DisplayName="Invoke Python Method to Get Folder Size" sap:VirtualizedContainerService.HintSize="434,169" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" Instance="[pythonScript]" Name="get_folder_size" Parameters="[{ folderPath }]" Result="[folderSize]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </p:InvokeMethod>
+              <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the output of the get_folder_size Python method for debugging and verification purposes." DisplayName="Log: Python Method Output" sap:VirtualizedContainerService.HintSize="434,215" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Invoke Python Method output (PythonObject): &quot; + folderSize.ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <p:GetObject x:TypeArguments="x:Object" sap2010:Annotation.AnnotationText="This activity extracts the folder size returned by the Python script and stores it as a UiPath variable." DisplayName="Extract Folder Size from Python Object" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="GetObject`1_7" PythonObject="[folderSize]" Result="[folderSizeInBytes]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </p:GetObject>
+              <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the converted folder size (from Python object to .NET format) for verification and debugging." DisplayName="Log: Converted Folder Size in Bytes" sap:VirtualizedContainerService.HintSize="434,206" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Folder Size in Bytes (after conversion): &quot; + folderSizeInBytes.ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+            </Sequence>
+          </ActivityAction>
+        </p:PythonScope.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </p:PythonScope>
+      <If sap2010:Annotation.AnnotationText="This condition checks whether the folder size exceeds 5 MB. If true, it triggers the process to move the folder; otherwise, it ends the process." Condition="[Convert.ToInt32(folderSizeInBytes) &gt; 5]" DisplayName="Check If Folder Size is Greater than 5 MB" sap:VirtualizedContainerService.HintSize="502,1233" sap2010:WorkflowViewState.IdRef="If_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,650" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap2010:Annotation.AnnotationText="This activity assigns the folder path for the new location where the ZIP file will be saved." DisplayName="Assign Destination Folder Path" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[newLocation]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">C:\Temp\Removedata</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:InvokePowerShell x:TypeArguments="x:String" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This activity performs three tasks in sequence:&#xA;1. Zips the contents of the folder,&#xA;2. Moves the ZIP file to the destination folder,&#xA;3. Deletes the original files from the source folder after zipping. This ensures the source folder is cleaned up, and the ZIP file is saved in the specified destination." CommandText="[&quot;Compress-Archive -Path '&quot; + folderPath.ToString + &quot;\*' -DestinationPath '&quot; + folderPath.ToString + &quot;\ZippedData_&quot; + DateTime.Now.ToString(&quot;yyyyMMdd&quot;) + &quot;.zip' -Force; &quot; +&#xD;&#xA;&quot;Move-Item -Path '&quot; + folderPath.ToString + &quot;\ZippedData_&quot; + DateTime.Now.ToString(&quot;yyyyMMdd&quot;) + &quot;.zip' -Destination '&quot; + newLocation.ToString + &quot;' -Force; &quot; +&#xD;&#xA;&quot;Remove-Item -Path '&quot; + folderPath.ToString + &quot;\*' -Force&quot;]" DisplayName="Zip, Move, and Clean Up Folder" sap:VirtualizedContainerService.HintSize="434,213" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_11" IsScript="True" PowerShellProcess="WindowsPowerShell64">
+              <ui:InvokePowerShell.Parameters>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+              </ui:InvokePowerShell.Parameters>
+              <ui:InvokePowerShell.PowerShellVariables>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokePowerShell.PowerShellVariables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokePowerShell>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the folder path and confirms that the folder has been zipped and moved to a new folder due to exceeding the size threshold (greater than 5MB)." DisplayName="Log: Folder Zipped and Size Logged" sap:VirtualizedContainerService.HintSize="434,221" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Folder &quot; + folderPath.ToString() + &quot; size is more than 5 MB.&quot; + Environment.NewLine + &quot;Folder moved to &quot; + newLocation + &quot;.&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,380" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Logs that the folder size is less than the threshold (5MB)." DisplayName="Log: Folder Size Less than 5MB" sap:VirtualizedContainerService.HintSize="382,215" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Folder size is less than 5 MB.&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:Return sap2010:Annotation.AnnotationText="This activity stops the workflow when the folder size does not meet the threshold and no further action is needed." DisplayName="End Process if No Action Required" sap:VirtualizedContainerService.HintSize="382,105" sap2010:WorkflowViewState.IdRef="Return_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Return>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>
