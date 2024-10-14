@@ -26,14 +26,14 @@ The `GeneratedFiles` folder contains example files and scripts used to create a 
 ### Running the Flowchart-based Workflow
 1. Open the File_Size_Check_Using_PowerShell_Flowchart in UiPath Studio.
 2. Create a "C:\Temp\Removedata" folder (or edit newLocation settings)
-3. Set up "GeneratedFiles" folder in you C drive (or edit settings in UiPath to your chosen location path).
+3. Set up "GeneratedFiles" folder in you C drive "C:\GeneratedFiles"(or edit settings in UiPath and Python files to your chosen location path).
 4. Run the workflow, and it will automatically check the folder size, zip it if needed, and move the folder.
 
 ### Running the Sequence-based Workflow with Python Script
 1. Open the File_Size_Check_Using_PowerShell_Python in UiPath Studio.
 2. Ensure the Python script (folder_size.py) is set up correctly.
 3. Create a "C:\Temp\Removedata" folder (or edit newLocation settings)
-4. Set up "GeneratedFiles" folder in you C drive (or edit settings in UiPath to your chosen location path).
+4. Set up "GeneratedFiles" folder in you C drive "C:\GeneratedFiles"(or edit settings in UiPath and Python files to your chosen location path).
 5. Run the workflow, and it will calculate the folder size using Python and proceed with folder operations.
 
 ## Generated Files
